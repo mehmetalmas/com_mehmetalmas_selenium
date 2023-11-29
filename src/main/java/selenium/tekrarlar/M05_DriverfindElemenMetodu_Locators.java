@@ -1,44 +1,21 @@
 package selenium.tekrarlar;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.List;
 
-public class M05_DriverfindElemenMetodu {
+public class M05_DriverfindElemenMetodu_Locators {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
         System.setProperty("webdriver.edge.driver", "src/resources/edgedriver_win64/msedgedriver.exe");
         WebDriver driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
-;
-        String url = "https://www.zyyah.com/homeowner-lifestyle-perfected-home-value-protected/";
-        driver.get(url);
-        driver.findElement(By.id("//*[@class=\"link link--purple accept-cookies\"]")).click();
-        System.out.println("completed");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
         By ByAll = null;
@@ -64,6 +41,33 @@ public class M05_DriverfindElemenMetodu {
         driver.findElement(By.xpath("tagName[@attributeIsmi='attributeValue']"));
 
  */
+
+        driver.get("https://www.amazon.de/");
+        WebElement cookeiesAkzeptieren = driver.findElement(By.xpath("//input[@id=\"sp-cc-accept\"]"));
+        cookeiesAkzeptieren.click();
+
+        // driver.manage().deleteAllCookies();
+
+        List<WebElement> urunlerElementListesi = driver.findElements(By.className("a-spacing-micro"));
+        System.out.println(urunlerElementListesi.size());
+        for (WebElement eachElement : urunlerElementListesi
+             ) {
+            System.out.println(eachElement.getSize());
+        }
+
+        driver.close();
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 
