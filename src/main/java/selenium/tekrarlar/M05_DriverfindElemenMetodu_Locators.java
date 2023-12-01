@@ -52,14 +52,20 @@ public class M05_DriverfindElemenMetodu_Locators {
 
 
         List<WebElement> urunlerElementListesi = driver.findElements(By.className("a-spacing-micro"));
-        System.out.println(urunlerElementListesi.size()); // 19
+
+        System.out.println(urunlerElementListesi.size()); // WebElement lerin sayisini yazdirir, 20 tane varmis bu liste icinde
+
+        // List leri direk yazdiramazsin bunlar icin for each kullanmalisin
+
         for (WebElement eachElement : urunlerElementListesi
              ) {
-            System.out.println(eachElement.getSize());
-        }
+            System.out.println(eachElement.getSize()); // Web elementlerin boyutlarini yazdirir, (240, 24) gibi
+            System.out.println(eachElement.getText()); // Web elementlerin üzerinde yazi varsa onlari  yazdirir, 20% Rabatt gibi
+            System.out.println(eachElement.getTagName()); // Html tag isimlerini getirir, div gibi
+            System.out.println(eachElement.getAttribute("class")); // girilen Html Attribute sini döndürür, 'a-section a-spacing-micro' gibi
+            System.out.println(eachElement.getCssValue("color")); // renk, yazı tipi boyutu vb. gibi CSS özelliklerinin değerini elde etmek için kullanılır. rgba(0, 113, 133, 1) gibi
 
-        WebElement searchTextBox =  driver.findElement(By.id("//input[@id=\"twotabsearchtextbox\"]"));
-        searchTextBox.sendKeys();
+        }
 
 
 

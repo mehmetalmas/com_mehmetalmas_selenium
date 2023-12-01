@@ -17,10 +17,6 @@ public class M06_DriverSwitchToMetodu {
 
         driver.get("https://www.amazon.de/");
 
-        WebElement cookeiesAkzeptieren = driver.findElement(By.xpath("//input[@id=\"sp-cc-accept\"]"));
-        cookeiesAkzeptieren.click();
-        // driver.manage().deleteAllCookies();
-
 
 
 
