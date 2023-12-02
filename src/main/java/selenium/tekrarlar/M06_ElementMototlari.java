@@ -67,7 +67,23 @@ public class M06_ElementMototlari {
         mehrKaufenundSparen.click();
         // mehrKaufenundSparen.clear(); Text girilen bir alan olmali
         // mehrKaufenundSparen.submit(); enter tusu gibi
-        // mehrKaufenundSparen.sendKeys("hello"); text girilen bir alan olmali
+        // mehrKaufenundSparen.sendKeys("hello" + Keys.ENTER); text girilen bir alan olmali
+
+
+        // Ürünün yazisinin (ücretinin 25 Euro, indiriminin %40, satis yerinin Almanya vb) "Mehr kaufen und sparen" oldugunun test edin
+
+        String actualMetinYazisi = mehrKaufenundSparen.getText();
+        String exceptedMetinYasisi = "Mehr kaufen und sparen";
+
+        if (actualMetinYazisi.equals(exceptedMetinYasisi)) {
+            System.out.println("testPassed");
+        }else{
+            System.out.println(("testFailed"));
+        }
+
+
+
+
 
 
 
