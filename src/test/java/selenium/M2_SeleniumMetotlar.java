@@ -4,10 +4,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import java.time.Duration;
-import java.time.temporal.Temporal;
 
 import static java.time.Duration.*;
-import static java.time.Duration.ofHours;
 
 public class M2_SeleniumMetotlar {
     public static void main(String[] args) throws InterruptedException {
