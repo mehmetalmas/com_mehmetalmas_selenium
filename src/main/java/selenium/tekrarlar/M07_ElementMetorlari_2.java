@@ -39,5 +39,14 @@ public class M07_ElementMetorlari_2 {
         }
 
 
+
+
+
+
+
+
+
+
+
     }
 }
