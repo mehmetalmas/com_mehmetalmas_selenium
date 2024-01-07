@@ -31,7 +31,8 @@ public class M3_DriverMetots {
 
         String acilanBrowserHandleDegeri = driver.getWindowHandle();
         driver.switchTo().window(acilanBrowserHandleDegeri);
-        System.out.println("acilanBrowserHandleDegerini getirir = " + driver.getWindowHandle()); //EB49C0086026543DE21D057FE8ADD544
+        System.out.println("acilanBrowserHandleDegerini getirir = " + driver.getWindowHandle());
+        //EB49C0086026543DE21D057FE8ADD544
 
 
         Set<String> acilanBrowserHandleDegerleri = driver.getWindowHandles();
@@ -40,7 +41,8 @@ public class M3_DriverMetots {
                 driver.switchTo().window(handle);
             }
         }
-        System.out.println("acilanBrowserHandleDegerlerini getirir = " + driver.getWindowHandles()); //[EB49C0086026543DE21D057FE8ADD544]
+        System.out.println("acilanBrowserHandleDegerlerini getirir = " + driver.getWindowHandles());
+        //[EB49C0086026543DE21D057FE8ADD544]
 
 
         String acilanSayfaninTumKaynakKodlari = driver.getPageSource();
@@ -91,20 +93,6 @@ public class M3_DriverMetots {
 
         WebElement hediyeKartlari = driver.findElement(By.id("x6g6zv-4c81rl-ibtnqu-hdyiud"));
         hediyeKartlari.submit();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

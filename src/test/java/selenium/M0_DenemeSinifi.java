@@ -27,12 +27,7 @@ public class M0_DenemeSinifi {
             System.out.println(eachDegiskeni.getSize());
         }
 
-
         driver.close(); // sadece acik olan pencereyi kapatir
-
-
-
-
 
 
     }

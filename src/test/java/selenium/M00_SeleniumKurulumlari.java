@@ -37,10 +37,6 @@ public class M00_SeleniumKurulumlari {
     proje olusturulmustur
 
 
-
-
-
-
     2.yol
     Maven Projesi olustrurarak bir selenium projesi olusturabiliriz,
     1-Maven Projesi olustur
@@ -58,17 +54,6 @@ public class M00_SeleniumKurulumlari {
     proje icerisinde güncelemek ile hepsi otomatik güncelleri, hepsinin sürümünü tek tek yazip güncellemeye gerek kalmaz
     10- Selenium un sitesinden chrome browser i indir ve proje icerisinde bir klasörün icine at (klasör ismi resources olabilir driver da)
     bundan sonrasi class icindeki adimlar yukarisi ile aynidir
-
-
-
-
-
-
-
-
-
-
-
 
 
 
